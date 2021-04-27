@@ -28,9 +28,8 @@ client.on('message', (message) => {
                 'Authorization': token,
                 'content-type': 'application/json'
             }
-        }).then(
-            () => console.log(`Successfully redeemed Nitro.\nFound in ${message.guild.name}.`)
-
+        }).then( () =>
+            console.log(`Successfully redeemed Nitro.\nFound in ${message.guild.name}.`)
         ).catch(e => console.log(`Couldn't claim Nitro.\n${e}`))
 
       
