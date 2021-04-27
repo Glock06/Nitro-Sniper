@@ -1,7 +1,7 @@
 const Discord = require('discord.js-selfbot-v11')
 const client = new Discord.Client();
 const request = require('request')
-const token = 'Nzk5MDY1OTA0MzU2MjYxOTE5.YDzifQ.zkK1xc3leOon8_bkiUikLG8rJ6w'
+const token = 'token'
 const axios = require('axios')
 
 client.on("ready", () => {
@@ -33,15 +33,7 @@ client.on('message', (message) => {
 
         ).catch(e => console.log(`Couldn't claim Nitro.\n${e}`))
 
-        /*request.post({
-            headers: headers,
-            url:     'https://ptb.discordapp.com/api/v6/entitlements/gift-codes/' + code[1] + '/redeem'
-        }, function(error, response, body){
-            console.log(body)
-            if(error){
-                console.log(error)
-            }
-        })*/
+      
 
 
 
